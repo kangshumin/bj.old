@@ -1,8 +1,14 @@
+---
+# front matter tells Jekyll to process Liquid
+sm_at: at sx.hs.ah.cn
+title: 首页 - 庶民笔记
+---
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>首页 - 庶民笔记</title>
+  <title>{{page.title}}</title>
   <link rel="stylesheet" type="text/css" href="master.css" title="default">
   <link rel="alternate stylesheet" type="text/css" href="dark.css" title="alternate">
   <link rel="stylesheet" href="lightbox2/css/lightbox.min.css">
@@ -21,8 +27,9 @@
   <!--HTML of main page-->
   <div class="wrapper" >
     <section>
-      <h1 id="top" class="heading">庶民笔记</h1>
+      <h1 id="top" class="heading">{{page.title}}</h1>
       <h2 class="subheading">实体书阅读，不刊之论汇集，生活点滴</h2>
+      <h3>{{ "Hello World!" | downcase }}   {{page.sm_at}}</h3>
 
       <div class=themebtn>
         <button class="button" onclick="setActiveStyleSheet('default'); return false;"><img src="light_theme.png" height="20px" width"20px" title='Toggle Theme'/> </button>
@@ -57,7 +64,7 @@
             
             
       
-      <h2 class="subheading">庶民不刊论</h2>
+      <h2 class="subheading">庶民不刊论集注</h2>
           <p><a href="releases.html">最近更新</a> 有这些经典语录.</p>
           <ul>
             <li>有三样东西可以缓解疲劳:希望,睡眠和微笑 - kant</li>
