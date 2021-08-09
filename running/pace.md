@@ -1,6 +1,6 @@
 <!-- https://guides.github.com/features/mastering-markdown/ -->
 
-# 咱家跑步配速 :running_man:
+# 庶民跑步记录 :running_man:
 > 注：
 > * 歙县足球场,国际田联标准400米塑胶跑道,常态设定5公里(12.5圈)
 > * 始于2021年正月
