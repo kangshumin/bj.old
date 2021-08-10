@@ -27,3 +27,5 @@
 
 ![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](https://res.cloudinary.com/bscc/image/upload/v1628564329/bj/Bekele.jpg "Kenenisa Bekele 12:37.35")
 ![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](/assets/images/Bekele.jpeg "Kenenisa Bekele 12:37.35")
+
+![Elephants](https://res.cloudinary.com/bscc/video/upload/v1611448842/samples/elephants.mp4 "Kenenisa Bekele 12:37.35")
