@@ -25,5 +25,5 @@
 20210718|        |13:38.00|        |        ||||06:49.00
 ||||||||
 
+![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](https://res.cloudinary.com/bscc/image/upload/v1628564329/bj/Bekele.jpg "Kenenisa Bekele 12:37.35")
 ![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](/assets/images/Bekele.jpeg "Kenenisa Bekele 12:37.35")
-
