@@ -32,7 +32,10 @@
   </a>
 </div>
 
-![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](https://res.cloudinary.com/bscc/image/upload/v1628564329/bj/Bekele.jpg "Kenenisa Bekele 12:37.35")
+![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](https://res.cloudinary.com/bscc/image/upload/v1628564329/bj/assets/images/Bekele.jpg "Kenenisa Bekele 12:37.35")
 
 ![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](/assets/images/Bekele.jpg "Kenenisa Bekele 12:37.35")
+
+https://res.cloudinary.com/bscc/image/upload/v1628563959/Bekele.jpg
+https://res.cloudinary.com/bscc/image/upload/v1628564329/bj/assets/images/Bekele.jpg
 

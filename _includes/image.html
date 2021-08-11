@@ -1,5 +1,5 @@
 {% if site.url == "https://kangshumin.github.io" and jekyll.environment == "production" %}
-<img src="https://res.cloudinary.com/bscc/image/upload/v1628564329/bj/{{ include.file }}" {% if include.class %}class="{{ include.class }}"{% else %}class="img-fluid"{% endif %} {% if include.width %}width="{{ include.width }}%"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} alt="{{ include.alt }}" {% if include.lazy %}loading="lazy"{% endif %} sizes="100vw">
+<img src="https://res.cloudinary.com/bscc/image/upload/v1628564329/bj{{ include.file }}" {% if include.class %}class="{{ include.class }}"{% else %}class="img-fluid"{% endif %} {% if include.width %}width="{{ include.width }}%"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} alt="{{ include.alt }}" {% if include.lazy %}loading="lazy"{% endif %} sizes="100vw">
 {% else %}
 <img src="{{ include.file }}" {% if include.class %}class="{{ include.class }}"{% else %}class="img-fluid"{% endif %} {% if include.width %}width="{{ include.width }}%"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} alt="{{ include.alt }}" {% if include.lazy %}loading="lazy"{% endif %} sizes="100vw">
 {% endif %}
