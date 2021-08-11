@@ -1,214 +1,65 @@
 ---
-# front matter tells Jekyll to process Liquid
-sm_at: at sx.hs.ah.cn
-title: 首页 - 庶民笔记
+title: Home
 ---
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
 
-<head>
-  <title>{{page.title}}</title>
-  <link rel="stylesheet" type="text/css" href="master.css" title="default">
-  <link rel="alternate stylesheet" type="text/css" href="dark.css" title="alternate">
-  <link rel="stylesheet" href="lightbox2/css/lightbox.min.css">
-  <script type="text/javascript" src="styleswitcher.js"></script>
-  <link rel="icon" type="image/png" href="mobile.png">
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Android-x86 is an Android Open Source Project licensed under Apache Public License 2.0. Some components are licensed under GNU General Public License (GPL) 2.0 or later. " />
-  <meta name="theme-color" content="#2e56cc">
-</head>
-
-<body>
-  <div w3-include-html="navbar.html"></div>
-  <div class="openNav">
-    <div class="icon"></div>
-  </div>
-  <!--HTML of main page-->
-  <div class="wrapper" >
-    <section>
-      <h1 id="top" class="heading">{{page.title}}</h1>
-      <h2 class="subheading">实体书阅读，不刊之论汇集，生活点滴</h2>
-      <h3>{{ "Hello World!" | downcase }}   {{page.sm_at}}</h3>
-
-      <div class=themebtn>
-        <button class="button" onclick="setActiveStyleSheet('default'); return false;"><img src="light_theme.png" height="20px" width"20px" title='Toggle Theme'/> </button>
-        <button class="button" onclick="setActiveStyleSheet('alternate'); return false;" ><img src="dark_theme.png" height="20px" width"20px" title="Toggle Theme"/></button>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <img src="/assets/images/markdown-mark-white.svg" alt="Markdown logo">
+        <p><i>The Markdown Guide</i> is a free and open-source reference guide that explains how to use Markdown, the simple and easy-to-use markup language you can use to format virtually any document.</p>
+        <p><a class="btn btn-outline-inverse btn-lg" href="/getting-started/" role="button">Get Started</a></p>
       </div>
-
-
-      <h2 class="subheading">实体书</h2>
-        <ul>
-          <li>2021-07-09: <a href="ssj/index.html">十三经</a> (思想文化源头，传世文化始祖).</li>
-          <li><a href="changelog.html">更多...</a>
-        </ul>
-      <br><br>
-
-            
-
-      <h2 class="subheading">跑步</h2>
-        <ul>
-          <li>2021-08-01: <a href="https://www.worldathletics.org/competitions/olympic-games">东京奥运赛程 OLYMPIC GAMES OLYMPIC STADIUM, TOKYO 30 JUL - 08 AUG 2021</a>.</li>          
-          <li>2021-07-18: <a href="running/pace.html">咱家配速</a>.</li>
-          <li>2021-07-18: <a href="running/5km.html">5公里</a>.</li>
-          <li><a href="running/index.html">更多...</a>
-        </ul>
-      <br><br>
-      <h2 class="subheading">习楷</h2>
-        <ul>
-          <li>2021-07-09: <a href="xikai/index.html">赵孟頫小楷</a>.</li>
-          <li><a href="changelog.html">更多...</a>
-        </ul>
-      <br><br>
-
-            
-            
-      
-      <h2 class="subheading">庶民不刊论集注</h2>
-          <p><a href="releases.html">最近更新</a> 有这些经典语录.</p>
-          <ul>
-            <li>有三样东西可以缓解疲劳:希望,睡眠和微笑 - kant</li>
-            <li>弱而不伏则曲，燥而求胜多败</li>
-            <li><a href="changelog.html">更多...</a>            
-          </ul>
-      <br><br>
-      
-    
-      
-      
-      <h2 class="subheading">美好生活期待</h2>
-      <p>标签： <a href="photos.html">家庭照片</a> <a href="running.html">跑步</a> <a href="xiaokai.html">小楷</a></p>
-
-      <h2 class="subheading">精彩照片</h2>
-        <div><script>
-          function add_screenshot(img, title) {
-            document.write('<div class="responsive gallery desc"><a class="image-link" href="screenshots/' + img + '" data-lightbox="ss" data-title="' + title +
-                           '"><img class="screenshot" src="screenshots/thumb/' + img + '"/></a> ' + title + '</div>');
-          }
-          screenshots = [
-            [ "SetupWizard-lang.jpg", "Setup wizard - Choose language" ],
-            [ "SetupWizard-wifi.jpg", "Setup wizard - Connect to wifi" ],
-            [ "SetupWizard-signin.jpg", "Setup wizard - Sign in" ],
-            [ "SetupWizard-services.jpg", "Setup wizard - Enable Google Services" ],
-            [ "Select-home.jpg", "Select a Home app" ],
-            [ "Launcher3.jpg", "Launcher3" ],
-            [ "Apps-list.jpg", "Apps List" ],
-            [ "Recent-task-list.jpg", "Recent Task List" ],
-            [ "QuickSettings.jpg", "Quick Settings" ],
-            [ "Notifications.jpg", "Notifications" ],
-            [ "Widgets.jpg", "Widgets" ],
-            [ "Multi-desktop.jpg", "Multi-desktop" ],
-            [ "Settings.jpg", "Settings" ],
-            [ "Settings-About.jpg", "Settings - About" ],
-            [ "Calculator.jpg", "Calculator" ],
-            [ "Calendar.jpg", "Calendar" ],
-            [ "Camera.jpg", "Camera" ],
-            [ "Clock.jpg", "Clock" ],
-            [ "Contacts.jpg", "Contacts" ],
-            [ "DevTools.jpg", "Dev Tools" ],
-            [ "FileManager.jpg", "File Manager" ],
-            [ "Gallery.jpg", "Gallery" ],
-            [ "Music.jpg", "Music" ],
-            [ "Terminal.jpg", "Terminal Emulator" ],
-            [ "Taskbar.jpg", "Taskbar launcher" ],
-            [ "Multi-window.jpg", "Run apps in multi-window mode" ],
-            [ "Split-window.jpg", "Run apps in split-window mode" ],
-            [ "Switch-to-window-mode.jpg", "Switch an app to window mode" ],
-            [ "PlayStore.jpg", "Play Store" ],
-            [ "Installing-VLC.jpg", "Installing VLC from Play Store" ],
-            [ "Search-apps.jpg", "Search apps in Play Store" ],
-            [ "Installed-apps.jpg", "Installed apps list" ],
-          ];
-          for (var i = screenshots.length - 1; i > screenshots.length - 5; i--) {
-            var j = Math.floor(Math.random() * (i + 1));
-            var temp = screenshots[i];
-            screenshots[i] = screenshots[j];
-            screenshots[j] = temp;
-            add_screenshot(screenshots[i][0], screenshots[i][1]);
-          }
-        </script></div>
-
-        <p>&nbsp;</p><p>更多照片视频 <a href="screenshots.html">这里</a>.</p>
-      <br><br>
-
-      
-      
-      
-      
-      
-      
-
-        <!--
-      <a href="donate.html"><img class="coffee" border="0" src="Android-x86_Coffee_Banner.jpg"></img></a>
-      <p>This is a project to port <a href="https://source.android.com">Android open source project</a> to x86 platform, formerly known as "<a href="https://code.google.com/archive/p/patch-hosting-for-android-x86-support/">patch hosting for android x86 support</a>".
-        The original plan is to host different patches for android x86 support from open source community. A few months after we created the project, we found out that we could do much more than just hosting patches. So we decide to create our code base
-        to provide support on different x86 platforms, and set up a git server to host it.</p>
-
-        <button class="download-btn" type="button" onClick="location.href='download.html'"><a id="download-button-home" href="download.html"><span>Download</span></a></button>
-
-        <p>This is an open source project licensed under Apache Public License 2.0. Some components are licensed under GNU General Public License (GPL) 2.0 or later. If you think we did something great, consider <a href="donate.html">making a donation</a>.</p>
-        -->    
-      
-      
-      <h2 class="subheading">Sponsors</h2>
-        <ul>
-          <li>Pillar <a href="https://pillarwm.com">Wealth Management</a> is an independent, fee-based, private wealth management firm.</li>
-          <li>Sponsored by <a href="https://ourfreestuff.net">poker online</a>.</li>
-          <!--<li>Sponsored by <a href="https://showboxa.com/showbox-app/">ShowBox for Android</a> &amp; <a href="https://showboxa.com/showbox-apk/">ShowBox APK file</a>.</li>-->
-        </ul>
-        <br><br>
-      <!--
-        <script data-cfasync="false" type="text/javascript" src="//www.increaserev.com/ads/cm/728x90.js"></script>
-      -->
-      
-      
-      <!--
-      <h2 class="subheading">Tested Platforms</h2>
-        <p>The tests are done by the project members and others from android-porting group.</p>
-        <ul>
-          <li><a href="https://microtech.store/e-tab-pro/?lang=en">Microtech e-tab Pro (2018)</a></li>
-          <li>Lenovo ThinkPad x61 Tablet</li>
-        </ul>
-        <p>
-        <br>Most of the models can run the native resolutions via i915 driver. Thanks to the kernel mode setting (kms) feature introduced since kernel 2.6.29.</p>
-          
-
-
-
-      <h2 class="subheading">To-Do List</h2>
-        <ul>
-          <li>Multiple displays support</li>
-          <li>Better power management</li>
-          <li>Miracast</li>
-        </ul>
-        <br><hr><br>
-        <p>
-        <a href="https://casinohex.se/online-casinon/mobila-casinon/"><img height="42px" src="https://casinohex.se/wp-content/uploads/CasinoHEX_Sverige_300x125.jpg" alt="kasinon för mobiltelefon - titta på CasinoHEX"></a>
-        </p><p>
-        <a href="https://casinoviking.com/new-casino"><img height="30px" src="https://casinoimages.blob.core.windows.net/casino/casinoviking-logo.png" alt="CasinoViking provide Android consumers the best new casinos UK experience"></a>
-        </p>
-
-    </section>
-
-    <script data-cfasync="false" type="text/javascript" src="//www.increaserev.com/ads/cm/rsticky120x600.js"></script>
--->
-    <div w3-include-html="footer.html"></div>
-  </div>
-
-  <!--JAVASCRIPT CODE-->
-
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script>
-    includeHTML();
-    $(".openNav").click(function() {
-      $("body").toggleClass("navOpen");
-      $("nav").toggleClass("open");
-      $(".wrapper").toggleClass("open");
-      $(".wrapperDark").toggleClass("open");
-      $(this).toggleClass("open");
-    });
-  </script>
-  <script src="lightbox2/js/lightbox.min.js"></script>
-
-</body>
+    </div>
+    {% if jekyll.environment == "production" %}<center><div class="horizontal" data-ea-publisher="markdownguide" data-ea-type="image"></div></center>{% endif %}
+    <div class="container">
+      <div class="md-guide-feature">
+        <h2 class="no-anchor">Everything you need to learn Markdown.</h2>
+        <p class="lead" style="margin-bottom: 60px">Markdown makes writing on the web fast and easy. <em>The Markdown Guide</em> teaches you how to use it.</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="/getting-started/">
+              <div class="icon">
+                <i class="fas fa-edit"></i>
+              </div>
+            </a>
+            <h4 class="no-anchor">Learn the ropes.</h4>
+            <p>Start using Markdown right now by following along with the <a href="/getting-started/">Getting Started</a> guide. It's designed for everyone, even novices.</p>
+          </div>
+          <div class="col-sm-4">
+            <a href="/basic-syntax/">
+              <div class="icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+            </a>
+            <h4 class="no-anchor">Dive into the syntax.</h4>
+            <p>Whether you're new to Markdown or a seasoned pro, you'll find the answers to your formatting questions on the <a href="/basic-syntax/">basic syntax page</a>.</p>
+          </div>
+          <div class="col-sm-4">
+            <a href="/extended-syntax/">
+              <div class="icon">
+                <i class="fas fa-code"></i>
+              </div>
+            </a>
+            <h4 class="no-anchor">Take it up a notch.</h4>
+            <p>Make your Markdown documents awesome by using <a href="/extended-syntax/">extended syntax</a> to create tables, fenced code blocks, automatic links, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="md-guide-feature">
+        <h2 class="no-anchor">Stay in the loop.</h2>
+        <p class="lead">Sign up now to get priority notifications about <em>The Markdown Guide</em>.</p>
+        <br/>
+        <a class="btn btn-default btn-lg" href="https://tinyletter.com/markdownguide" style="margin-top: -10px">Stay Updated</a>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
 </html>
