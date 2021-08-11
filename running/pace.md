@@ -26,7 +26,13 @@
 20210718|        |13:38.00|        |        ||||06:49.00
 ||||||||
 
-![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](https://res.cloudinary.com/bscc/image/upload/v1628564329/bj/Bekele.jpg "Kenenisa Bekele 12:37.35")
-![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](/assets/images/Bekele.jpeg "Kenenisa Bekele 12:37.35")
+<div>
+  <a href="" class="no-underline">
+  {% include image.html file="/assets/images/Bekele.jpeg" alt="男子5000米世界纪录 贝克勒(埃塞俄比亚) 12:37.35" title="男子5000米世界纪录 贝克勒 12:37.35" lazy="yes" %}
+  </a>
+</div>
 
-![Elephants](https://res.cloudinary.com/bscc/video/upload/v1611448842/samples/elephants.mp4 "Kenenisa Bekele 12:37.35")
+![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](https://res.cloudinary.com/bscc/image/upload/v1628564329/bj/Bekele.jpg "Kenenisa Bekele 12:37.35")
+
+![男子5000米世界纪录,由埃塞俄比亚的贝克勒创造!](/assets/images/Bekele.jpg "Kenenisa Bekele 12:37.35")
+
