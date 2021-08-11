@@ -1,2 +1,5 @@
+title: "庶民笔记"
+url: https://kangshumin.github.io       # site url
+baseurl: "bj"                           # apply repo name if use it under gh-pages branch
 gems:
   - jemoji
