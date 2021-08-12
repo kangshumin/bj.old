@@ -12,8 +12,8 @@
 
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/assets/favicons/apple-touch-icon.png">
+  <link rel="mask-icon" href="{{site.baseurl}}/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title == 'Home' %}Markdown Guide{% elsif page.title == 'Get the Book' %}Book | Markdown Guide{% else %}{{ page.title }}{% if page.url contains 'tools' and page.title != 'Tools' %} Markdown Reference{% endif %} | Markdown Guide{% endif %}</title>
@@ -29,22 +29,22 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
 
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/bootstrap-toc.min.css">
-  <link rel="stylesheet" href="/assets/css/docsearch.min.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/docsearch.min.css">
 
   {% if page.title == 'Home' or page.title == '404 Not Found' %}
-  <link href="/assets/css/homepage.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/assets/css/homepage.css" rel="stylesheet">
   {% else %}
-  <link href="/assets/css/page.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/assets/css/page.css" rel="stylesheet">
   {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <script async src="/assets/javascript/jquery-3.5.1.slim.min.js"></script>
-  <script async src="/assets/javascript/bootstrap.bundle.min.js"></script>
-  <script async src="/assets/javascript/bootstrap-toc.min.js"></script>
-  <script defer src="/assets/javascript/solid.min.js"></script>
-  <script defer src="/assets/javascript/fontawesome.min.js"></script>
+  <script async src="{{site.baseurl}}/assets/javascript/jquery-3.5.1.slim.min.js"></script>
+  <script async src="{{site.baseurl}}/assets/javascript/bootstrap.bundle.min.js"></script>
+  <script async src="{{site.baseurl}}/assets/javascript/bootstrap-toc.min.js"></script>
+  <script defer src="{{site.baseurl}}/assets/javascript/solid.min.js"></script>
+  <script defer src="{{site.baseurl}}/assets/javascript/fontawesome.min.js"></script>
   <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 </head>
