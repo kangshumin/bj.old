@@ -1,10 +1,12 @@
+---
+layout: about
+title: 跑步记录
+description: Even a small success gives you a sense of achievement (= a feeling of pride)
+---
 <!-- https://guides.github.com/features/mastering-markdown/ -->
 
-# 庶民跑步记录 :running_man:
-> 注：
-> * 歙县足球场,国际田联标准400米塑胶跑道,常态设定5公里(12.5圈)
-> * 始于2021年正月
-> * Even a small success gives you a sense of achievement (= a feeling of pride) .
+> * 歙县足球场，国际田联标准400米塑胶跑道
+> * 始于2021年正月，常态目标 5点起床， 5公里(12.5圈)
 > * 即便是小小的成功也给人一种成就感
 
 日期    |1Km     |2Km              |3Km     |4Km              |5Km-200m|-200m   |5Km     |pace||comments|

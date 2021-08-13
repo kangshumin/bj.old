@@ -9,14 +9,17 @@
     </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-top: 2px">
     <div class="navbar-nav">
-      <a class="nav-item nav-link {% if page.title == 'running' %}active{% endif %}" href="/running/">跑步</a>
-      <a class="nav-item nav-link {% if page.title == 'kai' %}active{% endif %}" href="/kai/">习楷</a>
+      <a class="nav-item nav-link {% if page.title == 'running' %}active{% endif %}" href="/bj/running/">跑步</a>
+      <a class="nav-item nav-link {% if page.title == 'kai' %}active{% endif %}" href="/bj/kai/">习楷</a>
       <a class="nav-item nav-link {% if page.title == 'books' %}active{% endif %}" href="/books/">实体书</a>
       <a class="nav-item nav-link {% if page.title == 'quotations' %}active{% endif %}" href="/quotations/">不刊之论</a>
       <!--
       <a class="nav-item nav-link {% if page.title == 'The Markdown Guide Book' %}active{% endif %}" href="/book/">生活点滴</a>
       <a class="nav-item nav-link {% if page.url contains 'tools' %}active{% endif %}" href="/tools/">Tools</a>
       -->
+
+      <a href="https://jekyllrb.com" {% if page.url == "/" %}style="color: yellow;"{% endif %}>Jekyll</a>
+      <a href="https://www.markdownguide.org" {% if page.url contains '404' %}style="color:yellow;"{% endif %}>MarkdownGuide</a>
     </div>
   </div>
     <form class="form-inline d-none d-lg-inline-block mt-2 mt-md-0">
